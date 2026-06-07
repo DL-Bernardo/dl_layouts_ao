@@ -18,9 +18,9 @@ Inclui melhorias e designs exclusivos para:
     'author': "DIGITALUB ANGOLA, LDA",
     'website': "https://www.digitalub.ao",
     'category': 'Accounting/Localizations',
-    'version': '17.0.1.0.0',
+    'version': '17.0.1.0.1',
     'license': 'OPL-1',           # Licença comercial para a Odoo Store
-    'price': 99.00,                # Preço sugerido do add-on de layouts
+    'price': 59.00,                # Preço sugerido do add-on de layouts
     'currency': 'EUR',
     
     # Dependências (já refletindo o novo nome do seu módulo core)
