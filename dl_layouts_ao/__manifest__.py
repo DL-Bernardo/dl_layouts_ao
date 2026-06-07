@@ -20,7 +20,7 @@ Inclui melhorias e designs exclusivos para:
     'category': 'Accounting/Localizations',
     'version': '17.0.1.0.0',
     'license': 'OPL-1',           # Licença comercial para a Odoo Store
-    'price': 119.00,                # Preço sugerido do add-on de layouts
+    'price': 99.00,                # Preço sugerido do add-on de layouts
     'currency': 'EUR',
     
     # Dependências (já refletindo o novo nome do seu módulo core)
