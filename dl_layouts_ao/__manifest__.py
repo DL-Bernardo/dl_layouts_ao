@@ -1,8 +1,8 @@
 # -*- coding: utf-8 -*-
 # Formerly: opc_layouts_aov17
 {
-    'name': "Angola - DIGITALUB Layouts",
-    'summary': """Layouts de Documentos Fiscais Certificados para o Mercado de Angola""",
+    'name': 'Angola Invoice & Document Layouts (AGT Compliant)',
+    'summary': 'Certified Fiscal Document Layouts & Reports for Angola Market (AGT Compliant)',
     'description': """
 Modelos e Layouts Visuais Customizados para Documentos Fiscais
 =============================================================
@@ -18,9 +18,9 @@ Inclui melhorias e designs exclusivos para:
     'author': "DIGITALUB ANGOLA, LDA",
     'website': "https://www.digitalub.ao",
     'category': 'Accounting/Localizations',
-    'version': '17.0.1.0.3',
+    'version': '17.0.1.0.4',
     'license': 'OPL-1',           # Licença comercial para a Odoo Store
-    'price': 80,                # Preço sugerido do add-on de layouts
+    'price': 65.0,                # Preço sugerido do add-on de layouts
     'currency': 'EUR',
     
     # Dependências (já refletindo o novo nome do seu módulo core)
