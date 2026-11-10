@@ -8,7 +8,7 @@
     <xpath expr="//th[@name='th_quantity']" position="after">
       <th name="th_uom" class="text-end">UN.</th>
     </xpath>
-    <xpath expr="//td[@name='td_quantity']" position="replace">
+    <xpath expr="//td[@name='td_quantity' or @name='td_product_quantity']" position="replace">
       <td name="td_quantity" class="text-end">
         <span t-field="line.product_uom_qty"/>
       </td>
@@ -24,7 +24,7 @@
       <th name="th_subtotal" class="text-end">TOTAL</th>
     </xpath>
 
-    <xpath expr="//h2[1]" position="replace">
+    <xpath expr="//div[@id='informations']" position="before">
       <h2>
         <t t-set="p_count" t-value="hasattr(doc, 'action_get_print_count') and doc.action_get_print_count() or 1"/>
         <span style="float:right;font-size:11px;margin-top:9px">
