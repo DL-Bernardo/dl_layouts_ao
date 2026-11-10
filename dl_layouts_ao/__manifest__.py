@@ -20,7 +20,7 @@ Inclui melhorias e designs exclusivos para:
     'website': "https://www.digitalub.ao",
     'support': "suporte@digitalub.ao",
     'category': 'Accounting/Localizations',
-    'version': '18.0.1.0.9',
+    'version': '19.0.1.0.9',
     'license': 'OPL-1',
     'price': 79.0,
     'currency': 'USD',
