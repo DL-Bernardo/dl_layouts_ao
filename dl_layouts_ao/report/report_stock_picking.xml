@@ -29,7 +29,7 @@
                 <strong>Ref. Doc Origem:</strong>
             </xpath>
 
-            <xpath expr="//div[@name='div_sched_date']" position="replace">
+            <xpath expr="//div[@name='div_sched_date' or @name='div_picking_date']" position="replace">
                 <div class="col-auto" t-if="o.scheduled_date" name="div_sched_date">
                     <strong>Data Agendada:</strong>
                     <p t-if="o.state != 'done'" t-field="o.scheduled_date" t-options='{"widget": "date"}'/>
@@ -37,7 +37,7 @@
                 </div>
             </xpath>
 
-            <xpath expr="//div[@name='div_sched_date']" position="before">
+            <xpath expr="//div[@name='div_sched_date' or @name='div_picking_date']" position="before">
                 <div class="col-auto" t-if="o.partner_id" name="vat">
                     <strong>V/Nº. Contribuinte</strong>
                     <p t-if="o.partner_id.commercial_partner_id.vat != '999999990'">
