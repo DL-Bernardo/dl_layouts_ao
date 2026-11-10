@@ -3,7 +3,7 @@
   <template id="report_invoice_document_layouts_aov17" inherit_id="account.report_invoice_document">
 
     <!-- Cabeçalho -->
-    <xpath expr="//h2[1]" position="replace">
+    <xpath expr="//div[@id='informations']" position="before">
       <div t-if="o.partner_id.id" class="col-12" style="font-family: Arial, Helvetica, sans-serif; color:#000000; font-size:10px;">
         <h3 style="margin-bottom:0px;font-size:18px">
           <span style="float:right;font-size:11px;margin-top:9px">
@@ -114,7 +114,9 @@
     <!-- QUADROS E TOTAIS -->
     <xpath expr="//div[@id='total']" position="replace">
       <t t-set="wht_amt" t-value="o._fields.get('withholding_amount') and o.withholding_amount or 0.0"/>
+      <t t-set="payment_vals" t-value="{}"/>
       <div id="total" class="row mt-3" style="font-family: Arial, Helvetica, sans-serif; font-size:9pt; color:#000000;">
+        <i class="d-none oe_payment_label"/>
         <div class="col-7">
           <t t-if="o._fields.get('amount_by_group') and o.amount_by_group">
             <table class="table table-sm table-bordered" style="page-break-inside: avoid; margin-bottom: 15px; border:1px solid #ddd;">
